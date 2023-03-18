@@ -62,7 +62,8 @@ ROOT_URLCONF = 'ddata.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / 'dummy_data/template'],
+        # 'DIRS': [BASE_DIR / 'dummy_data/template'],
+        'DIRS': [],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
