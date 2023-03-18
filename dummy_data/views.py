@@ -80,8 +80,10 @@ def index (request):
       print(field_name_2)
       table_headers = zip(field_name_1, field_name_2)
 
-      data_1=generate_dummy_1(request, field_name_1)    
-      data_2=generate_dummy_2(request, field_name_2) 
+      # data_1=generate_dummy_1(request, field_name_1)    
+      # data_2=generate_dummy_2(request, field_name_2) 
+      data_1 = "data_1"
+      data_2 = "data_2"
       results = zip(data_1, data_2)
 
       form = GenerateDummyForm()
