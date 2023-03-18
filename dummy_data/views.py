@@ -7,16 +7,17 @@ from django.template import loader
 import http.client
 import json
 from requests import request
+from decouple import config
 
 HEADERS = {
         'Content-Type': 'application/json',
         'customer-id': '1905674446',
-        'x-api-key': os.environ.get('x-api-key')
+        'x-api-key': config('APIKKEY')
         }
 
 CONN = http.client.HTTPSConnection("experimental.willow.vectara.io")
 
-def generate_dummy_1(request, field_name_1):
+def generate_dummy_1(field_name_1):
   result = {}
   payload = json.dumps({
   "model": "gpt-3.5-turbo",
@@ -38,7 +39,7 @@ def generate_dummy_1(request, field_name_1):
 
   return data
 
-def generate_dummy_2(request, field_name_2):
+def generate_dummy_2(field_name_2):
   result = {}
   payload = json.dumps({
   "model": "gpt-3.5-turbo",
@@ -77,8 +78,8 @@ def index (request):
       field_name_2 = form.cleaned_data['field_name_2']
       table_headers = zip(field_name_1, field_name_2)
 
-      data_1=generate_dummy_1(request, field_name_1)    
-      data_2=generate_dummy_2(request, field_name_2) 
+      data_1=generate_dummy_1(field_name_1)    
+      data_2=generate_dummy_2(field_name_2) 
 
       results = zip(data_1, data_2)
 
