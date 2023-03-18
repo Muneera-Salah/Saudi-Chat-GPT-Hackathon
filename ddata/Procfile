@@ -1,3 +1,1 @@
-heroku ps:scale web=1
-web: gunicorn gettingstarted.wsgi
-web: gunicorn ddata-tools:app
+web: gunicorn ddata.wsgi --log-file -
