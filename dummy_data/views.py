@@ -1,3 +1,4 @@
+import os
 from django.shortcuts import render
 from .forms import GenerateDummyForm
 
@@ -10,7 +11,7 @@ from requests import request
 HEADERS = {
         'Content-Type': 'application/json',
         'customer-id': '1905674446',
-        'x-api-key': 'zqt_cZZIzncr3qQYrfNyK-xnsqkQL0quDshqCb9gzA'
+        'x-api-key': os.environ.get('x-api-key')
         }
 
 
