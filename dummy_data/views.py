@@ -14,7 +14,6 @@ HEADERS = {
         'x-api-key': os.environ.get('x-api-key')
         }
 
-
 CONN = http.client.HTTPSConnection("experimental.willow.vectara.io")
 
 def generate_dummy_1(request, field_name_1):
@@ -25,7 +24,6 @@ def generate_dummy_1(request, field_name_1):
       {
       "role": "user",
       "content": f"generate a list 5 saudi of {field_name_1} in arabic"
-      # "content": f"generate fake list of saudi school name in arabic"
       }
   ]
   })
@@ -77,14 +75,11 @@ def index (request):
     if form.is_valid():
       field_name_1 = form.cleaned_data['field_name_1']
       field_name_2 = form.cleaned_data['field_name_2']
-      print(field_name_1)
-      print(field_name_2)
       table_headers = zip(field_name_1, field_name_2)
 
-      # data_1=generate_dummy_1(request, field_name_1)    
-      # data_2=generate_dummy_2(request, field_name_2) 
-      data_1 = "data_1"
-      data_2 = "data_2"
+      data_1=generate_dummy_1(request, field_name_1)    
+      data_2=generate_dummy_2(request, field_name_2) 
+
       results = zip(data_1, data_2)
 
       form = GenerateDummyForm()
