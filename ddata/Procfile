@@ -1,2 +1,3 @@
 web: gunicorn gettingstarted.wsgi
+web: gunicorn ddata-tools.wsgi
 web: gunicorn ddata.wsgi --log-file -
