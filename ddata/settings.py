@@ -26,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-t=2_hdjzo@nagmg3gv8osm8(j2-j*13q5#9up_d%=013zc8jki'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['127.0.0.1', 'ddata-tools.herokuapp.com']
@@ -145,6 +145,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # django_heroku.settings(locals())
