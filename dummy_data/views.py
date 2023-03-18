@@ -64,8 +64,11 @@ def generate_dummy_2(request, field_name_2):
 def index (request):
   template_name = "index.html"
   context = {
-    'mylist':'',
+    'table_headers':'',
+    'results':'',
   }
+  field_name_1 = ''
+  field_name_2 = ''
 
   if request.method == 'POST':
     form = GenerateDummyForm(request.POST)
@@ -73,12 +76,18 @@ def index (request):
     if form.is_valid():
       field_name_1 = form.cleaned_data['field_name_1']
       field_name_2 = form.cleaned_data['field_name_2']
+      print(field_name_1)
+      print(field_name_2)
+      table_headers = zip(field_name_1, field_name_2)
+
       data_1=generate_dummy_1(request, field_name_1)    
       data_2=generate_dummy_2(request, field_name_2) 
-      mylist = zip(data_1, data_2)
+      results = zip(data_1, data_2)
+
       form = GenerateDummyForm()
       context = {
-          'mylist': mylist,
+          'table_header': table_headers,
+          'results': results,
           'form': form
       }
     else:

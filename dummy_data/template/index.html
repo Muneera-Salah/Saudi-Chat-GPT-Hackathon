@@ -102,13 +102,12 @@
             <!-- ***** Header Text Start ***** -->
             <div class="header-text">
                 <div class="container">
-                    <div class="row">
-                        <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
-                            <h1>DData Tools To Solve the data projects <strong>challenges</strong></h1>
-                            <p>Generate <strong style="color: green;">Saudi</strong> fake data to contribute to solving
-                                the challenges of data governance projects.</p>
-
-                            <a href="#features" class="main-button-slider"><u>Try DData</u></a>
+                    <div class="row" style="background-color: #ffffff33; padding: 50px; border-radius: 10px;">
+                        <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12" >
+                            <i><img src="{% static 'assets/images/logo.png' %}" width="200px"></i>
+                            <h1>DData Tool to solve data project<strong>challenges</strong></h1>
+                            <p style="font-size: 21px;">Generate <strong style="color: green;">Saudi</strong> fake data that reassemble production data</p>
+                            <a href="#features" class="main-button-slider" style="font-size: 12px; padding: 19px 46px;"><u>Try DData</u></a>
                         </div>
                     </div>
                 </div>
@@ -170,13 +169,12 @@
     <!-- ***** Features Small End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
-    <section class="section padding-top-70 padding-bottom-0" id="features">
+    <!-- <section class="section padding-top-70 padding-bottom-0" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 col-md-12 col-sm-12 align-self-center"
                     data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <img src="{% static 'assets/images/sample.png' %}" class="rounded img-fluid d-block mx-auto" alt="App">
-                    <!-- <img src="assets/images/left-image.png" class="rounded img-fluid d-block mx-auto" alt="App"> -->
                 </div>
                 <div class="col-lg-1"></div>
                 <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
@@ -195,7 +193,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- ***** Features Big Item End ***** -->
 
 
@@ -270,19 +268,20 @@
                     <br />
                     <br />
                     <h5 class="margin-bottom-30">Results</h5>
+                    <br />
                     <div class="generate-results">
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th scope="col">Field #1</th>
-                                    <th scope="col">Field #2</th>
+                                    <th scope="col">Shcool Name</th>
+                                    <th scope="col">Address</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                {% for url, click in mylist %}
+                                {% for data_1, data_2 in results %}
                                 <tr>
-                                    <td>{{ url }}</td>
-                                    <td>{{click}}</td>
+                                    <td>{{data_1}}</td>
+                                    <td>{{data_2}}</td>
                                 </tr>
                                 {% endfor %}
                             </tbody>
@@ -333,8 +332,8 @@
                                 <div class="icon">
                                     <i><img src="{% static 'assets/images/user.png' %}" alt=""></i>
                                 </div>
-                                <h5 class="features-title">Amal Bin-Essa</h5>
-                                <p>Software Engineer Senior Engineer Artificial Intelligence Algorithms</p>
+                                <h5 class="features-title">Amal Abdulrazaq AlEssa</h5>
+                                <p>Lead Engineer, Data science and analytics</p>
 
                                 <a style="float: none;"
                                     href="https://www.linkedin.com/in/amal-bin-essa/?originalSubdomain=sa"
