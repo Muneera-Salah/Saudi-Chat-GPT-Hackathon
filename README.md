@@ -17,3 +17,7 @@ DData Tool to solve data project challenges by generate Saudi fake data that rea
 - Amal Abdulrazaq AlEssa
 - Muneera Salah AlNufaisi
 - Aliaa bin masoud
+
+
+# Resourse:
+- https://templatemo.com.cach3.com/tm-535-softy-pinko.html
