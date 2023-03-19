@@ -13,10 +13,10 @@ DData Tool to solve data project challenges by generate Saudi fake data that rea
 
 
 # Team Members:
-- Mazen Asiri
-- Amal Abdulrazaq AlEssa
-- Muneera Salah AlNufaisi
-- Aliaa bin masoud
+- Mazen Asiri | https://www.linkedin.com/in/asirimazen/
+- Amal Abdulrazaq AlEssa | https://www.linkedin.com/in/amal-bin-essa/?originalSubdomain=sa
+- Muneera Salah AlNufaisi | https://www.linkedin.com/in/muneerasalah/
+- Aliaa bin masoud | https://www.linkedin.com/in/aliaa-bin-masoud-820056b2/
 
 
 # Resourse:
